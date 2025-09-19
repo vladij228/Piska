@@ -1,0 +1,207 @@
+/* Банковские стили */
+.bank-screen {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f5;
+}
+
+.bank-header {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  background-color: #3b5998;
+  color: white;
+}
+
+.bank-header h2 {
+  margin-left: 12px;
+}
+
+.bank-content {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 16px;
+}
+
+.balance-cards {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.balance-card {
+  flex: 1;
+  background: white;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.balance-card h3 {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  color: #707579;
+}
+
+.balance-card .amount {
+  font-size: 24px;
+  font-weight: bold;
+  color: #3b5998;
+}
+
+.transfer-section {
+  background: white;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.transfer-section h3 {
+  margin-top: 0;
+}
+
+.transfer-options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.transfer-input {
+  padding: 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.transfer-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.transfer-buttons button {
+  flex: 1;
+  padding: 10px;
+  background-color: #3b5998;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.transfer-buttons button:hover {
+  background-color: #2d4373;
+}
+
+.contact-transfer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contact-transfer h4 {
+  margin: 0;
+}
+
+.contact-select {
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+}
+
+.contact-transfer button {
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.contact-transfer button:disabled {
+  background-color: #a0a0a0;
+  cursor: not-allowed;
+}
+
+.savings-section, .transactions-section {
+  background: white;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.savings-section h3, .transactions-section h3 {
+  margin-top: 0;
+}
+
+.saving-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #f0f2f5;
+}
+
+.saving-item:last-child {
+  border-bottom: none;
+}
+
+.transaction-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #f0f2f5;
+}
+
+.transaction-item:last-child {
+  border-bottom: none;
+}
+
+.transaction-info h4 {
+  margin: 0 0 4px 0;
+  font-size: 14px;
+}
+
+.transaction-info p {
+  margin: 0;
+  font-size: 12px;
+  color: #707579;
+}
+
+.transaction-amount {
+  font-weight: bold;
+}
+
+.transaction-amount.income {
+  color: #4caf50;
+}
+
+.transaction-amount.expense {
+  color: #f44336;
+}
+
+.bank-buttons {
+  display: flex;
+  gap: 8px;
+  padding: 12px;
+  justify-content: center;
+}
+
+.bank-button {
+  padding: 10px 16px;
+  background-color: #3b5998;
+  color: white;
+  border: none;
+  border-radius: 18px;
+  cursor: pointer;
+}
+
+.user-balance {
+  padding: 12px;
+  background-color: #f0f2f5;
+  border-top: 1px solid #e0e0e0;
+  font-weight: bold;
+  color: #3b5998;
+}
